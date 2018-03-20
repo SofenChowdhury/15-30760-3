@@ -1,12 +1,8 @@
-<?php
-	session_start();
-	if(isset($_SESSION["name"]) ){
+<?php 
+	require_once "include/header.php";
 ?>
+<h2> Welcome to xCompany </h2>
 
-<h1>Welcome Home! <?=$_SESSION["name"]?></h1><a href="logout.php">logout</a>
-
-<?php
-	}else{
-		echo "Please login first";
-	}
+<?php 
+	require_once "include/footer.php";
 ?>
